@@ -21,7 +21,7 @@ class Header extends React.Component {
   render() {
     return(
       <header>
-        <h1><Link to="/">Allstar Starterkit</Link></h1>
+        <h1><Link to="/">Universal Allstar Starterkit</Link></h1>
         <nav>
           <ul>
             <li>

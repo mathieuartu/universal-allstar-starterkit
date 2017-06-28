@@ -747,7 +747,7 @@ var Header = function (_React$Component) {
           _react2.default.createElement(
             _reactRouterDom.Link,
             { to: '/' },
-            'Allstar Starterkit'
+            'Universal Allstar Starterkit'
           )
         ),
         _react2.default.createElement(

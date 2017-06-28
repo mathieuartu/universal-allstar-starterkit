@@ -9,7 +9,7 @@ import { Provider } from 'react-redux';
 import { myappStore , updateUserInfo } from '../../config/redux/actions.js';
 
 let unsubscribe = myappStore.subscribe(() =>
-  console.log("New global state : ", myappStore.getState())
+  console.log("📡 New global state : ", myappStore.getState())
 );
 
 //Tools
@@ -32,7 +32,7 @@ export default class AppClient extends React.Component{
       success: function(xhrThis){
         var userInfo = JSON.parse(xhrThis.responseText);
         userInfo = userInfo.error == true ? null : userInfo;
-        console.log("user info received from API : ", userInfo);
+        console.log("👶 User info received from API : ", userInfo);
         //Dispatch info to Redux Store
         myappStore.dispatch(updateUserInfo(userInfo));
       }
