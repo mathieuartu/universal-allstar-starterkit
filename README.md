@@ -23,3 +23,17 @@ This will launch the express server & reload it with nodemon whenever webpack tr
 ```
 yarn start
 ```
+
+This universal starterkit takes advantage of : 
+
+- React
+- React Router 4
+- Redux
+- Mongodb
+- Passport
+- Express
+- Stylus
+- Webpack
+
+And uses server-side rendering 😎
+
