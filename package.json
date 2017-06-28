@@ -1,0 +1,58 @@
+{
+  "name": "allstar-starterkit",
+  "version": "1.0.0",
+  "license": "MIT",
+  "main": "views/index.ejs",
+  "dependencies": {
+    "autoprefixer": "^7.1.1",
+    "babel-cli": "^6.24.1",
+    "bcrypt-nodejs": "^0.0.3",
+    "body-parser": "^1.17.2",
+    "colors": "^1.1.2",
+    "connect-flash": "^0.1.1",
+    "cookie-parser": "^1.4.3",
+    "css-loader": "^0.28.4",
+    "ejs": "^2.5.6",
+    "express": "^4.15.3",
+    "express-session": "^1.15.3",
+    "extract-text-webpack-plugin": "^2.1.2",
+    "mongoose": "4.10.8",
+    "morgan": "^1.8.2",
+    "nodemon": "^1.11.0",
+    "passport": "^0.3.2",
+    "passport-facebook": "^2.1.1",
+    "passport-google-oauth": "^1.0.0",
+    "passport-local": "^1.0.0",
+    "path": "^0.12.7",
+    "postcss-loader": "^2.0.6",
+    "quickthumb": "^0.0.12",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "react-redux": "^5.0.5",
+    "react-router": "^4.1.1",
+    "react-router-dom": "^4.1.1",
+    "redux": "^3.7.0",
+    "style-loader": "^0.18.2",
+    "stylus": "^0.54.5",
+    "stylus-loader": "^3.0.1",
+    "webpack": "^3.0.0",
+    "webpack-node-externals": "^1.6.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.25.0",
+    "babel-loader": "^7.1.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1"
+  },
+  "scripts": {
+    "db": "mongod --dbpath data/db",
+    "watch": "webpack -w & webpack --config webpack.config.server.js --display-error-details -w",
+    "build:server": "webpack --config webpack.config.server.js -w",
+    "start": "nodemon --watch appserver.js appserver.js",
+    "all": "yarn db & yarn watch & yarn start"
+  },
+  "browserslist": [
+    ">1%",
+    "ie > 9"
+  ]
+}
